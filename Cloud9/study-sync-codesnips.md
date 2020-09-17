@@ -8,5 +8,9 @@
 - `npm init -y` (Creates a package.json file)
 - `npm i express --save`
 - `touch index.js index.html app.js style.css`
+- `curl -s http://169.254.169.254/latest/meta-data`
+- `curl -s http://169.254.169.254/latest/meta-data/network/interfaces/macs/`
+- `curl -s http://169.254.169.254/latest/meta-data/network/interfaces/macs/16:32:e6:48:f6:8f/security-group-ids/`
+- `aws ec2 authorize-security-group-ingress --group-id sg-03d6exxxxx --port 8080 --protocol tcp --cidr x.x.x.x/32`
 
 Code to follow along in https://github.com/ExamProCo/TheFreeAWSDeveloperAssociate
