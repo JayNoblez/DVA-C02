@@ -15,4 +15,5 @@
 - `aws ec2 describe-security-groups --group-ids sg-03d6exxxxx --output text --filters Name=ip-permission.to-port,Values=8080`
 
 Code to follow along in https://github.com/ExamProCo/TheFreeAWSDeveloperAssociate
+
 Use this link to check your IP to configure for Security Group IP: https://checkip.amazonaws.com/
