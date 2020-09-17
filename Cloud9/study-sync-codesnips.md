@@ -8,3 +8,5 @@
 - `npm init -y` (Creates a package.json file)
 - `npm i express --save`
 - `touch index.js index.html app.js style.css`
+
+Code to follow along in https://github.com/ExamProCo/TheFreeAWSDeveloperAssociate
