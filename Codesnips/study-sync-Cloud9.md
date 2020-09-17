@@ -20,3 +20,8 @@ Server is listening on Port 8080. Now can run http:x.x.x.x/8080 to view app
 Code to follow along in https://github.com/ExamProCo/TheFreeAWSDeveloperAssociate
 
 Use this link to check your IP to configure for Security Group IP: https://checkip.amazonaws.com/
+
+---
+Creating a git repo
+cd ~/environment/study-sync/
+touch .gitignore
