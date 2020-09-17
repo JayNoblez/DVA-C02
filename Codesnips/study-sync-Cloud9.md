@@ -25,3 +25,4 @@ Use this link to check your IP to configure for Security Group IP: https://check
 Creating a git repo
 cd ~/environment/study-sync/
 touch .gitignore
+c9 .gitignore (Add node_modules to your .gitignore file.)
