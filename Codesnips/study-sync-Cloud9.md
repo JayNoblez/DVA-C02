@@ -22,7 +22,18 @@ Code to follow along in https://github.com/ExamProCo/TheFreeAWSDeveloperAssociat
 Use this link to check your IP to configure for Security Group IP: https://checkip.amazonaws.com/
 
 ---
-Creating a git repo
-cd ~/environment/study-sync/
-touch .gitignore
-c9 .gitignore (Add node_modules to your .gitignore file.)
+**Creating a git repo**
+
+- cd ~/environment/study-sync/
+
+- touch .gitignore
+
+- c9 .gitignore (Add node_modules to your .gitignore file.)
+
+Recommended to use CodeCommit as the Git Repo
+
+---
+
+**Installing EB CLI**
+
+Instructions in https://github.com/aws/aws-elastic-beanstalk-cli-setup
