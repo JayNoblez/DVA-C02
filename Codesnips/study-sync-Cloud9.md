@@ -24,13 +24,37 @@ Use this link to check your IP to configure for Security Group IP: https://check
 ---
 **Creating a git repo**
 
-- cd ~/environment/study-sync/
+- `cd ~/environment/study-sync/`
 
-- touch .gitignore
+- `touch .gitignore`
 
-- c9 .gitignore (Add node_modules to your .gitignore file.)
+-`c9 .gitignore` (Add node_modules to your .gitignore file.)
 
-Recommended to use CodeCommit as the Git Repo
+**Recommended to use CodeCommit as the Git Repo**
+
+*To use CodeCommit, make sure that the git is initialized in the root directory. Also at least one commit is needed in order to create repo*
+`cd study-sync`
+`git init`
+`eb init` 
+`git commit -m "Initial commit"`
+`mkdir .ebextensions` (This is for your saved setting, in case you terminate the environment)
+`touch Procfile` (to start application)
+**Procfile**
+`web: npm start`
+`cd .ebextensions`
+`touch 001_envar.config`
+`c9 001_envar.config`
+
+**Edit contents of 001_envar.config**
+option_settings:
+    aws:elasticbeanstalk:application:environment:
+        PORT: 8081
+        NODE_ENV: production
+`git commit -m "Configuration for Elastic Beanstalk"`
+`git push`
+
+`eb create --single` (For single instance env i.e No ELBs)
+`eb status`
 
 ---
 
